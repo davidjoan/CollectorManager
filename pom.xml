@@ -18,8 +18,19 @@
     </plugins>
   </build>
   
+  	<properties>
+		<vaadin.version>6.7.1</vaadin.version>
+
+	</properties>
+  
   	<dependencies>
  
+ <!-- web UI -->
+ 		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin</artifactId>
+			<version>${vaadin.version}</version>
+		</dependency>
 	  <!-- Spring framework -->
 	  <dependency>
 		<groupId>org.springframework</groupId>
