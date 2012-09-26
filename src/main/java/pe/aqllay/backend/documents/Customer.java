@@ -1,11 +1,19 @@
 package pe.aqllay.backend.documents;
 
+import java.io.Serializable;
+
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-public class Customer extends Base {
+public class Customer extends Base implements Serializable{
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     // dni
     @Indexed
     private String identityDocument;
